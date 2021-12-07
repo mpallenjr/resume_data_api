@@ -2,3 +2,22 @@ GET http://localhost:3000/experiences
 ###
 
 POST http://localhost:3000/experiences
+
+### Student Create
+POST http://localhost:3000/students
+Content-Type: application/json
+
+{
+  "first_name": "Britney", 
+  "last_name": "Foor",
+  "email": "britney@gmail.com", 
+  "phone_number": "123-456-1234",
+  "bio": "bio",
+  "linkedin_url": "linkedin_url",
+  "twitter_handle": "twitter_handle",
+  "website_url": "website_url",
+  "resume_url": "resume_url",
+  "github_url": "github_url",
+  "photo": "photo_url",
+  "password": "password"
+}
