@@ -15,3 +15,10 @@ Content-Type: application/json
 
 ###
 GET http://localhost:3000/experiences/1
+###
+PATCH http://localhost:3000/experiences/1
+Content-Type: application/json
+
+{
+  "company_name": "B&L&T Consulting"
+}
