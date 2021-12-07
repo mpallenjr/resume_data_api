@@ -3,6 +3,9 @@ GET http://localhost:3000/experiences
 
 POST http://localhost:3000/experiences
 
+### Student Index
+GET http://localhost:3000/students
+
 ### Student Create
 POST http://localhost:3000/students
 Content-Type: application/json
