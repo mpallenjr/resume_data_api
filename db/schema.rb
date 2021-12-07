@@ -10,44 +10,35 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2021_12_07_011408) do
-=======
-ActiveRecord::Schema.define(version: 2021_12_07_011208) do
->>>>>>> 9f0821407559adbe2903840383b0005b78c7e3f2
+ActiveRecord::Schema.define(version: 2021_12_07_015452) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-<<<<<<< HEAD
-  create_table "experiences", force: :cascade do |t|
-    t.date "start_date"
-    t.date "end_date"
-    t.string "job_title"
-    t.string "company_name"
-=======
   create_table "educations", force: :cascade do |t|
     t.date "start_date"
     t.date "end_date"
     t.string "degree"
     t.string "university_name"
->>>>>>> 9f0821407559adbe2903840383b0005b78c7e3f2
     t.text "details"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.integer "student_id"
   end
 
-<<<<<<< HEAD
-  create_table "skills", force: :cascade do |t|
-    t.string "skill_name"
-=======
   create_table "experiences", force: :cascade do |t|
     t.date "start_date"
     t.date "end_date"
     t.string "job_title"
     t.string "company_name"
     t.text "details"
->>>>>>> 9f0821407559adbe2903840383b0005b78c7e3f2
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "student_id"
+  end
+
+  create_table "skills", force: :cascade do |t|
+    t.string "skill_name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
