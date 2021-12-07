@@ -4,5 +4,6 @@ Rails.application.routes.draw do
   post "/experiences" => "experiences#create"
   post "/students" => "students#create"
   get "/students/:id" => "students#show" 
+  patch "/students/:id" => "students#update"
 end
 
