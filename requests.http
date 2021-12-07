@@ -2,3 +2,16 @@ GET http://localhost:3000/experiences
 ###
 
 POST http://localhost:3000/experiences
+Content-Type: application/json
+
+{
+  "start_date": 20210419,
+  "end_date": 20221113,
+  "job_title": "AutoCAD Designer",
+  "company_name": "B&L Consulting",
+  "details": "Generated construction packages",
+  "student_id": 1
+}
+
+###
+GET http://localhost:3000/experiences/1
