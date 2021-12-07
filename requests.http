@@ -1,3 +1,4 @@
+### EXPERIENCE REQUESTS
 GET http://localhost:3000/experiences
 ###
 
@@ -22,3 +23,31 @@ Content-Type: application/json
 {
   "company_name": "B&L&T Consulting"
 }
+
+###
+DELETE http://localhost:3000/experiences/4
+
+### SKILLS REQUESTS
+GET http://localhost:3000/skills
+###
+
+POST http://localhost:3000/skills
+Content-Type: application/json
+
+{
+  "skill_name": "Making coffee",
+  "student_id": 1
+}
+
+###
+GET http://localhost:3000/skills/1
+###
+PATCH http://localhost:3000/skills/3
+Content-Type: application/json
+
+{
+  "skill_name": "Making tea"
+}
+
+###
+DELETE http://localhost:3000/skills/4

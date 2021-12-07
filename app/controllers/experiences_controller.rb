@@ -44,6 +44,12 @@ class ExperiencesController < ApplicationController
       render json: e.errors.full_messages
     end
   end
+
+  def destroy
+    e = Experience.find_by(id: params[:id])
+    e.destroy
+    render json: {message: "The experience has been removed"}
+  end
   
 
 end
