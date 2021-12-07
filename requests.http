@@ -2,3 +2,15 @@ GET http://localhost:3000/experiences
 ###
 
 POST http://localhost:3000/experiences
+###
+
+GET http://localhost:3000/experiences/1
+###
+GET http://localhost:3000/students/1
+###
+GET http://localhost:3000/educations/1
+###
+GET http://localhost:3000/capstones/1
+
+###
+GET http://localhost:3000/skills/1
